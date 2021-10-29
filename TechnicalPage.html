@@ -1,0 +1,193 @@
+<br><!DOCTYPE html>
+<meta charset="UTF-8">
+<title>Technical Documentation Page</title>
+<link href="TechnicalPageCSS.css" rel="stylesheet">
+<html>
+  <body id="home">
+    <nav id="navbar">
+      <header id="header">Java Tutorial</header>
+      <ul id="list">
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#what_is_java?">What is Java?</a></li>
+        <li><a class="nav-link" href="#getting_started">Getting Started</a></li>
+        <li><a class="nav-link" href="#programming_your_first_application">Programming your first application</a></li>
+        <li><a class="nav-link" href="#java_syntax">Java Syntax</a></li>
+        <li><a class="nav-link" href="#variables">Variables</a></li>
+        <li><a class="nav-link" href="#data_types">Data Types</a></li>
+        <li><a class="nav-link" href="#assigning_values_to_variables">Assigning Values to Variables</a></li>
+        <li><a class="nav-link" href="#java_operators">Java Operators</a></li>
+        <li><a class="nav-link" href="#java_strings">Java Strings</a></li>
+        <li><a class="nav-link" href="#if_else_statements">If Else Statements</a></li>
+        <li><a class="nav-link" href="#for_loops">For Loops</a></li>
+        <li><a class="nav-link" href="#while_loops">While Loops</a></li>
+        <li><a class="nav-link" href="#arrays">Arrays</a></li>
+        </ul>
+        </nav>
+              <main id="main-doc">
+  <section class="main-section" id="introduction">
+    <header>Introduction</header>
+    <article>
+      <p>Welcome to the Java Documentation Page! Here you will learn what the Java programming language is and how to develop basic programs. 
+      </p>
+      <p>Many different languages are used today to develop a wide range of computer programs, from web and server-side applications to mobile and desktop apps, and of course games. This documentation page will help introduce to you the core concepts that are used in the development of such programs.</p><br>
+    </article>
+        <section class="main-section" id="what_is_java?">
+    <header>What is Java?</header>
+    <article>
+      <p>Java was created in 1995 and quickly gained popularity due to its ease of use, no-cost open-source platform. It is now owned by Oracle and continues to be one of the most widely-used languages.</p>
+      <p> Java is a class-based Object-Oriented Programming Language.</p>
+      <p>Why use Java?</p>
+      
+      <ul>
+        <li>Java is a platform-independent langauge that can be run and compiled on any system (Windows, Mac, Linux, Raspberry Pi etc).</li>
+        <li>It is free and open source.</li>
+        <li>Easy to write, compile and debug programs.</li>
+        <li>Fast and powerful - great for big-data processing.</li>
+        <li>Huge community support - there are a great many Java developers out there!</li>
+        <li>Access to and extensive collection of APIs and libraries.</li></ul><br>
+     </article>
+        <section class="main-section" id="getting_started">
+    <header>Getting Started</header>
+    <article>   
+     <p>To begin programming in Java you must have Java installed on your computer - please refer to our recently updated guide on Java installation and version checking.</p>
+      <p> You can use Notepad or another similar text-editing application to write Java programs and run them using a command console, or you can download a Java IDE (Integrated Development Environment) such as Eclipse IDE (our favorite choice), and use the built-in project managment systems and tools, along with the auto-suggest features, that make programming in Java much more easier and effective.</p><br>
+          </article>   
+        <section class="main-section" id="programming_your_first_application">
+    <header>Programming your first application</header>
+    <article>       
+      <p>Let's start coding! The first program that you will code here will be the "Hello World" program, as shown below:</p><br>
+      <code>
+        public class HelloWorld { <br>
+        public static void main(String[] args){ <br>  
+System.out.println("Hello World");}<br>
+        }
+        
+      </code><br>
+      <p>As you can see, this is a very simple program that prints the string "Hello World" to the console/screen, once the program has been run. The simplicity of this code makes it perfect for beginner instruction, so let's have a look at the code and see what is happening!</p><br>
+      <code>public class HelloWorld {...</code><br>
+      <p>Here we have the class name and definition: "Hello World" is the name of the class, and we declare this before the initial set of brackets ("{ }"). These brackets enclose the entire program to be written.</p><br>
+      <code>public static void main (String[] args){...     
+      </code><br>
+      <p>This is the main method. Every application in Java must contain the main method. The Java compiler starts executing the code from the main method.</p><br>
+      <code>System.out.println("Hello World"); }<br>}</code><br>
+      <p>The above statement is a print statement that prints the string "Hello World" to the console/screen. </p><br></article>
+      <section class="main-section" id="java_syntax">
+    <header>Java Syntax</header>
+    <article>
+      <p>Java is essentially a collection of objects and classes that communicate through the use of method calls. Java syntax is how we write and format code to utilize these objects and methods.</p><p>There are two broad categories of data types in Java - primitive types, and object/reference types. Primitive data types include:</p><ul>
+      <li>Integer values (int, Long, Byte etc).</li>
+      <li>Double values(double and float).</li>
+      <li>Character values(char).</li>
+      <li>Boolean values(true, false).</li></ul>
+      <p>Reference types, on the other hand, are objects that contain references to values and/or other objects. Keep reading for futher information on the language of Java!</p><br></article>
+      <section class="main-section" id="variables">
+    <header>Variables</header>
+        <article>
+        <p>In Java, variables are essentially blocks, or 'pieces' of memory that hold a data value. A variable thus has a correspnding data type assigned to it. There are four types of variables in Java:</p><ul>
+        <li>Non-static fields</li>
+        <li>Static fields</li>
+        <li>Local variables</li>
+        <li>Parameters</li>
+        </ul>
+ <p>A non-static field is a variable (known as an 'Instance variable') that belongs to an object, whereas a static field variable (or 'Class variable') belongs to a class. </p>
+ <p>A local variable is a variable declared inside a method, and is only accessible inside the method that called it. A parameter is a variable that is passed to a method when the method is called.</p><br>
+    </article>
+  <section class="main-section" id="data_types">
+    <header>Data Types</header>
+    <article>
+      <p>As described above, in Java data types can be divided into two broad categories - primitive data types and reference data types. A primitive data type contains the value of the variable directly in the memory allocated to said variable - like a number or character. A variable of an object reference type ('Reference variable') is different in that it does not contain the object, but contains a <i>reference</i> to it. The following section expands on this idea and shows how the coding language is different depending on the data type</p><br>
+          </article>
+          <section class="main-section" id="assigning_values_to_variables">
+    <header>Assigning values to variables</header>
+    <article>
+      <p>The following shows how you delcare a primitive variable and assign a value to said variable:</p><br>
+      <code>int x = 10;<br>String str = "hello";<br>double y = 5.5;<br>char z = 'a';</code><br>
+      <p>Now we shall see how one would declare a variable of one of the core object types:</p><br>
+      <code>Integer myInt = new Integer(10);</code><br>
+      <p>Here we see that the reference variable <i>myInt</i> refers to an 'Integer' object that contains the value '10' within it. An <i>instance</i> of the object has been created and this refers to the value.</p><br>
+            </article>
+ <section class="main-section" id="java_operators">
+    <header>Java Operators</header>
+   <article>
+     <p>Java operators are used to perform operations (or calculations) on variables and values.</p>
+     <p>Arithmatic operators are used to perform common mathematical calcualtions:</p><br>
+     <code>int x = y + z;<br>
+       int x = y - z;<br>
+     int x = y * z;<br>
+       int x = y / z;<br>
+       int x = y % z; //the '%', or modulus operator, returns the remainder of a division.<br>
+     </code><br>
+     <p>Java assignment operators are used to assign values to variables - some examples are shown below, although more do exist:</p><br>
+     <code>x = 5;<br>
+       x += 3; // adds 3 to x<br>
+       x -= 3; // subtracts 3 from x<br>
+       x *= 3; // multiplies x by 3<br>
+       x /= 3; // divides x by 3;<br>
+       </code><br>
+     <p>There are also comparison operators and logic operators:</p><br>
+     <code>x == y; // x is equal to y<br>
+       x != y; // x is not equal to y<br>
+       x > y; // x is greater than y<br>
+       x < y; // x is less than y <br>
+       x >= y; // x is greater than or equal to y<br>
+       x <= y; // x is less than or equal to y<br>
+       x > 5 && x < 10; // x is greater than 5 AND less than 10<br>
+       x < 6 || x > 10; // x is less than 6 OR greater than 10;<br>
+     </code><br><br>
+     </article>
+     <section class="main-section" id="java_strings">
+    <header>Java Strings</header>
+       <article>
+         <p>In Java, Strings are used to store text. The String variable contains characters surround by double quotes:</p><br><code>String x = "Hello";</code><br>
+         <p>A string in Java is actually an object that contains various methods that can perform operations on strings. For example, the length of string can be called using the "<i>.length()</i>" method:</p><br>
+         <code>String x = "Hello";<br>
+           int y = x.length(); // outputs 5
+         </code><br>
+         <p>Other methods within the string object include (but not limited to) "<i>.toUpperCase()</i>" (outputs string using all upper-case characters) and "<i>.toLowerCase()</i>" (outputs string using all lower-case letters</p><br>
+         </article>
+       <section class="main-section" id="if_else_statements">
+    <header>If Else Statements</header>
+         <article>
+           <p>Java supports the usual logical conditions from mathematics, as described in the section above. These can be used along with conditional statements to perform different actions based on conditions. An example is:</p><br>
+           <code>int x; // given some value<br>
+             int y; // given some value<br>
+             if (x < y){ <br>
+           System.out.println("x is less than y");<br>}<br>
+             else {<br>
+             System.out.println("x is greater than y")<br>}
+           </code><br>
+           <p>Here, the If statement checks whether the condition "x is less than y" is true and excutes a block of code if this true. If this same condition is false, the following Else statement checks this and excutes a block of code if neccessary. </p><br>
+         </article>
+         <section class="main-section" id="for_loops">
+    <header>For Loops</header>
+           <article>
+           <p>A 'For' loop is used when we want a certain block of code to be excuted a defined number of times, based on specific conditions. An example of a for loops is:</p><br>
+             <code>for (x=0; x<10; x++){<br>// block of code to be executed<br>}
+             </code><br>
+             <p>In the case above, we set a variable to 0 before the loop starts. Next, a condition for the loop is defined  (in this case, x must be less than 10). If this condition remains true, the loop will begin again. Lastly, the variable's value is increased by 1 each time the loop is run. So after 10 iterations of the loop, the statement <i> x < 10</i> will become false and the loop will stop and the block of code within the loop will no longer be executed. </p><br>
+           </article>
+       <section class="main-section" id="while_loops">
+    <header>While Loops</header>
+              <article>
+       <p>A While loop loops through a block of code as long as a specified condition remains true. An example:</p><br>
+   <code>While (String choice = "yes"){<br>
+     // block of code executes<br>}
+   </code><br>
+                <p>The 'do-while' loop is a variant of the while loop. In a do-while loop, the block of code is executed once before the loop checks if the specified condition is true, then it will repeat the loop as long as the condition is true:</p><br>
+<code>do {<br>
+     // block of code executed<br>} while (String choice = "yes");
+   </code><br><br>
+              </article>
+               <section class="main-section" id="arrays">
+    <header>Arrays</header>
+           <article>
+    <p>Arrays are used in Java to store multiple values for one variable, as opposed to using a separate variable for each value. To access an element within an array, we reference its index number. Here are some examples of arrays and how to access an index number:</p><br>
+    <code>String[] names = {"matt", "tim", "bob", "steve"};<br>
+      int[] nums = {1, 2, 3, 4, 5};<br>
+      System.out.println(names[0]); // outputs "matt"<br>
+      System.out.println(nums[0]); // outputs 1.
+    </code><br>
+    </article>
+    </main>
+  </body>
+</html>
